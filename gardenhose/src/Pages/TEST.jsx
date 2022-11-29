@@ -3,8 +3,10 @@ import React from "react";
 
 function Test() {
     return (
-        <div>
-            testing for overlay
+        <div className="text-white absolute z-30 flex justify-start">
+        <h1 className="test absolute">
+            Jungify
+        </h1>
         </div>
      )
 }

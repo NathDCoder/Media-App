@@ -1,6 +1,7 @@
 import React from "react";
 import NavLinks from "./Pages/NavBar";
-// import TEST from "./Pages/TEST";
+import TEST from "./Pages/TEST";
+import Background from "./Pages/Background";
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
@@ -14,8 +15,11 @@ import NavLinks from "./Pages/NavBar";
 
 function App() {
   return ( 
+    <div >
       <NavLinks />
-      // <TEST />
+      <TEST />
+      <Background />
+    </div>
   )
 }
 
