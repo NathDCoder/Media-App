@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "@material-tailwind/react": "^1.2.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
+    "apollo": "^2.34.0",
+    "bootstrap": "^5.2.3",
+=======
     "apollo-server-express": "^3.11.1",
     "axios": "^1.2.0",
     "bcrypt": "^5.1.0",
@@ -15,9 +21,14 @@
     "graphql": "^16.6.0",
     "mongoose": "^6.7.4",
     "nodemon": "^2.0.20",
+>>>>>>> b90068c59220d3bba2c600a5468c1cc3f99d9781
     "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "tw-elements": "^1.0.0-alpha12",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
