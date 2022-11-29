@@ -1,4 +1,5 @@
-const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers');
+const User = require('../models/User');
+const Music = require('../models/Music');
+// const SignUp = require('../models/SignUp');
 
-module.exports = { typeDefs, resolvers };
+module.exports = { User, Music };

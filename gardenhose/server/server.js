@@ -1,6 +1,11 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
+// const mongoose = require('mongoose');
+// const dotenv = require('dotenv');
+
+// dotenv.config()
+// mongoose.connect(process.env.DATABASE_ACCESS, () => console.log('Database connected'));
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
