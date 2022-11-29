@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Music } = require('../Models'); 
+const { User, Music } = require('../models'); 
 
 const resolvers = {
     Query: {
