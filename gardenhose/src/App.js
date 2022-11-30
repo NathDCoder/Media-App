@@ -1,25 +1,57 @@
 import React from "react";
-import NavLinks from "./Pages/NavBar";
-import TEST from "./Pages/TEST";
+import NavLinks from "./Components/NavBar/NavBar";
+import Title from "./Components/NavBar/Title";
 import Background from "./Pages/Background";
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./Pages/Home"
+import { Route, Routes } from 'react-router-dom';
+import LoginEngine from "./Components/Login/Signup";
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
 
 // const client = new ApolloClient({
-//   uri: 'https://flyby-gateway.herokuapp.com/',
+//   uri: 'graphql',
 //   cache: new InMemoryCache(),
 // });
 
 
 function App() {
   return ( 
-    <div >
+<main>
+    <nav>
       <NavLinks />
-      <TEST />
+      <Title />
       <Background />
+    </nav>
+    <div>
+       <Routes>
+            <Route 
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/signup"
+                element={<LoginEngine />}
+              />
+              {/* <Route 
+                path="/login" 
+                element={<Login />}
+              />
+              <Route 
+                path="/me" 
+                element={<Profile />}
+              />
+              <Route 
+                path="/profiles/:username" 
+                element={<Profile />}
+              />
+              <Route 
+                path="/thoughts/:thoughtId" 
+                element={<SingleThought />}
+              />  */}
+      </Routes>
     </div>
+</main>
   )
 }
 

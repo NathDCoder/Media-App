@@ -11,19 +11,48 @@
         @apply font-[Montserrat] h-screen bg-gradient-to-b from-slate-600 to-slate-400
     }
     li {
-        @apply p-6 text-lg font-bold cursor-pointer
+        @apply p-6 text-lg font-bold cursor-pointer list-none 
     }
     .magnify {
-        @apply text-2xl flex justify-end p-1 top-5 right-5 cursor-pointer
+        @apply text-2xl flex p-1 cursor-pointer right-10 top-10
+    }   
+    .title {
+        @apply text-4xl p-2 font-bold top-2 left-5
     }
-    .test {
-        @apply text-2xl flex justify-start p-2 font-bold top-2 left-5
+    .login {
+        @apply text-xl flex justify-center right-16 top-2
+    }
+
+    .welcome2 {
+        @apply px-4 text-2xl font-bold 
+    }
+
+    .form {
+        @apply flex justify-center bottom-60
+    }
+    button {
+        @apply shadow-2xl
+    }
+    .siginbutton {
+        @apply relative m-2 w-32 h-10
+    }
+    .homebutton {
+        @apply relative left-5 m-2 w-60 h-10
+    }
+    .submitbutton {
+        @apply absolute bottom-32 w-32 h-10
+    }
+    input {
+        @apply relative rounded-md p-4 m-2 right-8
     }
 }
 
 .main {
     width: 100%;
     height: 100%;
+    top: -300px;
+    align-content: center;
+
 }
 
 video {
@@ -31,4 +60,10 @@ video {
     height: 100%;
     object-fit: cover;
 }
+.welcome2 {
+    bottom: 600px;
+}
+.submitbutton {
+    left: 860px;
 
+}
