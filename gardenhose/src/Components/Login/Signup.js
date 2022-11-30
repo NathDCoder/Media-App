@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 
 
 // Here we import a helper function that will check if the email is valid
@@ -44,6 +44,7 @@ function Form() {
       setErrorMessage(
         `Choose a more secure password for the account: ${userName}`
       );
+      
       return;
     }
     alert(`Hello ${userName}`);
@@ -66,14 +67,14 @@ function Form() {
         </div>
 
         <div class="siginbutton flex space-x-2 justify-center">
-        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><Link to="/login">Sign In</Link> {userName}</button>
+        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><Link to="/login">Sign In</Link> </button>
         </div>
 
         <div class="flex space-x-2 justify-start">
         <button type="button" class="submitbutton inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={handleFormSubmit}>Submit</button>
         </div></>
 
-      <form className="form absolute text-center m-auto left-0 right-0">
+      <form className="text-black form absolute text-center m-auto left-0 right-0">
         <input
           value={email}
           name="email"
