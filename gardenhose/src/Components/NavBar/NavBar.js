@@ -5,30 +5,31 @@ import { Link } from 'react-router-dom';
 function NavLinks() {
     return (
     <main>
-        <div className="">
-            <div className="flex w-full justify-center absolute z-30 text-white">
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/Genres"><li>Genres</li></Link>  
-            <Link to="/Artist"><li>Artist</li></Link> 
-            <Link to="/Songs"><li>Songs</li></Link>
-            <Link to="/Playlist"><li>Playists</li></Link>
-            </div>
+        
+        <div>
+            <ul className="flex w-full justify-center absolute z-30 text-white">
+
+            <li><span><Link to="/"><button>Home</button></Link></span></li>
+            <li><span><Link to="/Genres"><button>Genres</button></Link></span></li>
+            <li><span><Link to="/Artist"><button>Artist</button></Link></span></li>
+            <li><span><Link to="/Songs"><button>Songs</button></Link></span></li>
+            <li><span><Link to="/Playlist"><button>Playists</button></Link></span></li>  
+       
+            </ul>
             <h2 className="magnify w-full absolute z-30 justify-end text-white"><GiMagnifyingGlass/></h2>
             <div className="login w-full absolute z-30 justify-end text-white">
             
-            <div>
-            <Link to="/signup">Signup</Link>
-            </div>
+                <span><Link to="/login"><button>Log In</button></Link></span>
+           
             
-            <div>
-            <Link to="/login">Login</Link>
-            </div>
+                <span><Link to="/signup"><button >Sign Up</button></Link></span>
+              
             </div>
         </div>
+
+           
     </main>
-         
     )
 }
-
 
 export default NavLinks;

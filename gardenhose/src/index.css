@@ -11,7 +11,7 @@
         @apply font-[Montserrat] h-screen bg-gradient-to-b from-slate-600 to-slate-400
     }
     li {
-        @apply p-6 text-lg font-bold cursor-pointer list-none 
+        @apply p-6 text-lg font-bold list-none 
     }
     .magnify {
         @apply text-2xl flex p-1 cursor-pointer right-10 top-10
@@ -30,9 +30,7 @@
     .form {
         @apply flex justify-center bottom-60
     }
-    button {
-        @apply shadow-2xl
-    }
+    
     .siginbutton {
         @apply relative m-2 w-32 h-10
     }
@@ -45,6 +43,16 @@
     input {
         @apply relative rounded-md p-4 m-2 right-8
     }
+    .inquiry {
+        @apply relative bottom-32 w-32 h-10 right-96
+    }
+    .navitems {
+        @apply relative top-2 cursor-pointer
+    }
+    .text {
+        @apply text-white
+    }
+   
 }
 
 .main {
@@ -52,7 +60,6 @@
     height: 100%;
     top: -300px;
     align-content: center;
-
 }
 
 video {
@@ -65,5 +72,14 @@ video {
 }
 .submitbutton {
     left: 860px;
+}
+.Genre {
+   bottom: 750px;
 
+}
+.logreturn {
+    bottom: 800px
+}
+.fields {
+    bottom: 300px;
 }

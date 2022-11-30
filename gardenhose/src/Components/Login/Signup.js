@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, redirect } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 // Here we import a helper function that will check if the email is valid
@@ -12,6 +12,7 @@ function Form() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -32,6 +33,7 @@ function Form() {
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
+    navigate('/')
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !userName) {
@@ -43,10 +45,11 @@ function Form() {
     if (!checkPassword(password)) {
       setErrorMessage(
         `Choose a more secure password for the account: ${userName}`
-      );
-      
+      )
       return;
     }
+
+
     alert(`Hello ${userName}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
@@ -67,7 +70,7 @@ function Form() {
         </div>
 
         <div class="siginbutton flex space-x-2 justify-center">
-        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><Link to="/login">Sign In</Link> </button>
+        <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"><Link to="/login">Sign In</Link></button>
         </div>
 
         <div class="flex space-x-2 justify-start">
