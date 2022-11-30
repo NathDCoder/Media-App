@@ -4,7 +4,8 @@ import Title from "./Components/NavBar/Title";
 import Background from "./Pages/Background";
 import Home from "./Pages/Home"
 import { Route, Routes } from 'react-router-dom';
-import LoginEngine from "./Components/Login/Signup";
+import SignupEngine from "./Components/Login/Signup";
+import {Login} from "./Components/Login/Login";
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
@@ -31,13 +32,13 @@ function App() {
               />
               <Route
                 path="/signup"
-                element={<LoginEngine />}
+                element={<SignupEngine />}
               />
-              {/* <Route 
+              <Route 
                 path="/login" 
                 element={<Login />}
               />
-              <Route 
+              {/* <Route 
                 path="/me" 
                 element={<Profile />}
               />
@@ -48,7 +49,7 @@ function App() {
               <Route 
                 path="/thoughts/:thoughtId" 
                 element={<SingleThought />}
-              />  */}
+              />   */}
       </Routes>
     </div>
 </main>
