@@ -4,7 +4,7 @@ const express = require('express')
 const router = express.Router()
 const signUpTemplateForm = require('../models/SignUp')
 
-router.post('signup', (req, res) => {
+router.post('signup', (request, response) => {
     const registeredUser = new signUpTemplateForm({
         fullName: request.body.fullName,
         username: request.body.username,

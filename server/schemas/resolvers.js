@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Music } = require('../models'); 
+const { User, Comment } = require('../models'); 
 
 const resolvers = {
     Query: {
@@ -11,10 +11,10 @@ const resolvers = {
         },
         songs: async (parent, {username }) => {
             const params = username ? { username } : {};
-            return Music.find(params).sort({ createdAt: -1 });
+            return Comment.find(params).sort({ createdAt: -1 });
         },
         song: async (parent, { songId }) => {
-            return Music.findOne({ _id: songId})
+            return Comment.findOne({ _id: songId})
         },
         me: async (parent, args, context) => {
             if(context.user) {
@@ -50,7 +50,7 @@ const resolvers = {
         
         addComment: async (parent, { songId, commentText }, context) => {
             if (context.user) {
-              return Music.findOneAndUpdate(
+              return Comment.findOneAndUpdate(
                 { _id: songId },
                 {
                   $addToSet: {
