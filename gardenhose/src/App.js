@@ -6,6 +6,9 @@ import Home from "./Pages/Home"
 import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
+import Genres from "./Pages/Genre";
+import Artist from "./Components/ArtistList/ArtistPage";
+import Songs from "./Pages/songChart";
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
@@ -40,15 +43,15 @@ function App() {
               />
               <Route 
                 path="/Genres" 
-                element={<Home />}
+                element={<Genres />}
               />
               <Route 
                 path="/Artist" 
-                element={<Home />}
+                element={<Artist />}
               />
               <Route 
                 path="/Songs" 
-                element={<Home />}
+                element={<Songs />}
               />   
       </Routes>
     </div>
