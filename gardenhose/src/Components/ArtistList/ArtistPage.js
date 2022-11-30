@@ -1,19 +1,32 @@
 import React from "react";
 
 
-function Artist () {
+function Artists () {
    return (
-    <div className="welcome1 text-white relative z-30 min-w-full min-h-full ">
-      <ul className="welcome2 absolute text-center m-auto left-0 right-0">
-      <li>Chevelle</li>
-      <li>Boys To Men</li>
-      <li>The Police</li>
-      <li>Rush</li>
-      <li>Regina Belle</li>
-      </ul>
+    <div className="Genre relative">
+    <ul className="absolute z-30 min-w-full min-h-full text-center">
+    <li className="text">
+        James Newton Howard
+      </li>
+      <li className="text">
+        John Williams
+      </li>
+      <li className="text">
+        Jerry Goldsmith
+      </li>
+      <li className="text">
+        Michael Giacchino
+      </li>
+      <li className="text">
+        Bear Mcreary
+      </li>
+      <li className="text">
+        Hanz Zimmer
+      </li>
+    </ul>
      
     </div>
    )
 }
 
-export default Artist
+export default Artists

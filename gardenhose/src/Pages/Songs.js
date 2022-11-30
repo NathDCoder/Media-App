@@ -1,10 +1,10 @@
 import React from "react";
 import Songs from "../Components/Songs/SongsPage";
 
-function Songs () {
+function SongsPage () {
    return (
     <Songs/>
    )
 }
 
-export default Songs
+export default SongsPage

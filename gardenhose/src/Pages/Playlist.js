@@ -1,10 +1,10 @@
 import React from "react";
 import Playlist from "../Components/Playlist/PlaylistPage";
 
-function Playlist () {
+function Playlista () {
    return (
     <Playlist/>
    )
 }
 
-export default Playlist
+export default Playlista

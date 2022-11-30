@@ -3,16 +3,30 @@ import React from "react";
 
 function Genres () {
    return (
-    <div className="welcome1 text-white relative z-30 min-w-full min-h-full ">
-      <ul className="welcome2 absolute text-center m-auto left-0 right-0">
-      <li>Movie Scores</li>
-      <li>Rock</li>
-      <li>R&B</li>
-      <li>CLassical</li>
-      <li>Techno</li>
-      </ul>
-     
+    <div className="Genre relative">
+  <ul className="absolute z-30 min-w-full min-h-full text-center">
+  <li className="text">
+      Rock
+    </li>
+    <li className="text">
+      Movie Scores
+    </li>
+    <li className="text">
+      Classical
+    </li>
+    <li className="text">
+      R&B
+    </li>
+    <li className="text">
+      Jazz
+    </li>
+    <li className="text">
+      Techno
+    </li>
+  </ul>
+   
     </div>
+    
    )
 }
 

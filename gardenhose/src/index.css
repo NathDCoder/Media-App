@@ -30,9 +30,7 @@
     .form {
         @apply flex justify-center bottom-60
     }
-    button {
-        
-    }
+    
     .siginbutton {
         @apply relative m-2 w-32 h-10
     }
@@ -50,6 +48,9 @@
     }
     .navitems {
         @apply relative top-2 cursor-pointer
+    }
+    .text {
+        @apply text-white
     }
    
 }
@@ -71,4 +72,14 @@ video {
 }
 .submitbutton {
     left: 860px;
+}
+.Genre {
+   bottom: 750px;
+
+}
+.logreturn {
+    bottom: 800px
+}
+.fields {
+    bottom: 300px;
 }

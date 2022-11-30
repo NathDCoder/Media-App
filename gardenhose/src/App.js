@@ -7,8 +7,9 @@ import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
 import Genres from "./Pages/Genre";
-import Artist from "./Components/ArtistList/ArtistPage";
-import Songs from "./Pages/songChart";
+import Artist from "./Pages/Artist";
+import Songs from "./Pages/Songs";
+import Playlist from "./Pages/Playlist";
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
@@ -53,6 +54,10 @@ function App() {
                 path="/Songs" 
                 element={<Songs />}
               />   
+              <Route 
+                path="/Playlists" 
+                element={<Playlist />}
+              /> 
       </Routes>
     </div>
 </main>
