@@ -1,13 +1,13 @@
 import React from "react";
 
 
-function Test() {
+function Title() {
     return (
         <div className="text-white absolute z-30 flex justify-start">
-        <h1 className="test absolute">
+        <h1 className="title absolute">
             Jungify
         </h1>
         </div>
      )
 }
-export default Test
+export default Title
