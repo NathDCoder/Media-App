@@ -35,4 +35,4 @@ function Songs () {
 
 }
 
-export default Songs
+export default Songs;
