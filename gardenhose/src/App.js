@@ -6,8 +6,9 @@ import Home from "./Pages/Home"
 import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
-import Searchbar from "./Components/Searchbar/Searchbar";
-//import Songs from "./Pages/songChart"
+// import Searchbar from "./Components/Searchbar/Searchbar";
+import Songs from "./Pages/songChart"
+import SongsPage from "./Pages/Songs";
 import Genres from "./Pages/Genre";
 import Artist from "./Pages/Artist";
 import Playlist from "./Pages/Playlist";
@@ -27,10 +28,9 @@ function App() {
     <nav>
       <NavLinks />
       <Title />
-      <Background />
-      <Searchbar/>
+     <Background />
     </nav>
-    {/* <Songs/> */}
+  
     <div>
        <Routes>
             <Route 

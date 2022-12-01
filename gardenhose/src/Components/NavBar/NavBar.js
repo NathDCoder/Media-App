@@ -1,4 +1,4 @@
-import { GiMagnifyingGlass } from "react-icons/gi";
+// import { GiMagnifyingGlass } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
 
@@ -14,9 +14,10 @@ function NavLinks() {
             <li><span><Link to="/Artist"><button>Artist</button></Link></span></li>
             <li><span><Link to="/Songs"><button>Songs</button></Link></span></li>
             <li><span><Link to="/Playlist"><button>Playists</button></Link></span></li>  
-       
+                
+               
             </ul>
-            <h2 className="magnify w-full absolute z-30 justify-end text-white"><GiMagnifyingGlass/></h2>
+            
             <div className="login w-full absolute z-30 justify-end text-white">
             
                 <span><Link to="/login"><button>Log In</button></Link></span>
@@ -25,6 +26,7 @@ function NavLinks() {
                 <span><Link to="/signup"><button >Sign Up</button></Link></span>
               
             </div>
+        
         </div>
 
            

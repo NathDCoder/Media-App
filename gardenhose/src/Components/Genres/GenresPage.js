@@ -1,33 +1,13 @@
 import React from "react";
 
 
-function Genres () {
-   return (
-    <div className="Genre relative">
-  <ul className="absolute z-30 min-w-full min-h-full text-center">
-  <li className="text">
-      Rock
-    </li>
-    <li className="text">
-      Movie Scores
-    </li>
-    <li className="text">
-      Classical
-    </li>
-    <li className="text">
-      R&B
-    </li>
-    <li className="text">
-      Jazz
-    </li>
-    <li className="text">
-      Techno
-    </li>
-  </ul>
-   
-    </div>
-    
-   )
-}
+export const Genres = [
+  {title: 'Hip Hop', value:'HIP_HOP_RAP'},
+  {title: 'RnB', value:'SOUL_RNB'},
+  {title: 'Pop', value:'POP'},
+  {title: 'Latin', value:'LATIN'},
+  {title: 'Rock', value:'ROCK'},
+  {title: 'Film', value:'FILM_TV'},
+  {title: 'K-Pop', value:'K_POP'},
+];
 
-export default Genres
