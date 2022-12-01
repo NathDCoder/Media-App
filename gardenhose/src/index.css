@@ -61,7 +61,7 @@
     .logreturn {
         @apply w-28 h-10
     }
-   
+    
 }
 
 .main {
@@ -100,6 +100,14 @@ video {
 .login2 {
     position:absolute;
     bottom: 310px;
-    right: 550px;
-    
+    right: 550px;   
+}
+.genre {
+    bottom: 700px;
+    left: 900px;
+}
+
+.genrepick {
+    bottom: 775px;
+    left: 900px;
 }
