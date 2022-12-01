@@ -6,6 +6,8 @@ import Home from "./Pages/Home"
 import { Route, Routes } from 'react-router-dom';
 import SignupEngine from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
+import Searchbar from "./Components/Searchbar/Searchbar";
+// import Songs from "./Pages/songChart"
 // import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 
@@ -23,7 +25,9 @@ function App() {
       <NavLinks />
       <Title />
       <Background />
+      <Searchbar/>
     </nav>
+    {/* <Songs/> */}
     <div>
        <Routes>
             <Route 
