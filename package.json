@@ -1,6 +1,17 @@
 {
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
   "dependencies": {
     "@apollo/server": "^4.2.1",
+    "apollo-server-express": "^3.11.1",
     "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   }
 }

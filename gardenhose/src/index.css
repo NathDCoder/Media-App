@@ -11,7 +11,7 @@
         @apply font-[Montserrat] h-screen bg-gradient-to-b from-slate-600 to-slate-400
     }
     li {
-        @apply p-6 text-lg font-bold cursor-pointer list-none 
+        @apply p-6 text-lg font-bold list-none 
     }
     .magnify {
         @apply text-2xl flex p-1 cursor-pointer right-10 top-10
@@ -22,6 +22,9 @@
     .login {
         @apply text-xl flex justify-center right-16 top-2
     }
+    .login2 {
+        @apply rounded-md p-4 m-2 text-white w-20 h-10
+    }
 
     .welcome2 {
         @apply px-4 text-2xl font-bold 
@@ -30,11 +33,9 @@
     .form {
         @apply flex justify-center bottom-60
     }
-    button {
-        @apply shadow-2xl
-    }
+    
     .siginbutton {
-        @apply relative m-2 w-32 h-10
+        @apply m-2 w-32 h-10
     }
     .homebutton {
         @apply relative left-5 m-2 w-60 h-10
@@ -45,6 +46,22 @@
     input {
         @apply relative rounded-md p-4 m-2 right-8
     }
+    label{
+        @apply relative rounded-md p-4 m-2 left-20 text-white
+    }
+    .inquiry {
+        @apply relative bottom-96 w-32 h-10 right-96
+    }
+    .navitems {
+        @apply relative top-2 cursor-pointer
+    }
+    .text {
+        @apply text-white
+    }
+    .logreturn {
+        @apply w-28 h-10
+    }
+   
 }
 
 .main {
@@ -52,7 +69,6 @@
     height: 100%;
     top: -300px;
     align-content: center;
-
 }
 
 video {
@@ -65,5 +81,25 @@ video {
 }
 .submitbutton {
     left: 860px;
+}
+.Genre {
+   bottom: 750px;
 
+}
+.logreturn {
+    position:absolute;
+    bottom: 330px;
+    right: 400px;
+}
+.fields {
+    bottom: 300px;
+}
+.fields2 {
+    bottom: 350px
+}
+.login2 {
+    position:absolute;
+    bottom: 310px;
+    right: 550px;
+    
 }

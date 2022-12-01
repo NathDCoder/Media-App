@@ -6,10 +6,10 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    songs: [Music]!
+    songs: [Comments]!
   }
 
-  type Music {
+  type Comments {
     _id: ID
     songText: String
     songAuthor: String
