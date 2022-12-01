@@ -10,14 +10,6 @@ import Genres from "./Pages/Genre";
 import Artist from "./Pages/Artist";
 import Songs from "./Pages/Songs";
 import Playlist from "./Pages/Playlist";
-// import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-
-
-
-// const client = new ApolloClient({
-//   uri: 'graphql',
-//   cache: new InMemoryCache(),
-// });
 
 
 function App() {
