@@ -15,6 +15,7 @@ import Genres from "./Components/Genres/Genre";
 import Playlist from "./Pages/Playlist";
 
 
+
 function App() {
   return ( 
 <main>
