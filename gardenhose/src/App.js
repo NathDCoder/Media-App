@@ -7,8 +7,8 @@ import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
 // import Searchbar from "./Components/Searchbar/Searchbar";
-import SearchSongs from "./Components/Searchbar/searchSongs";
-// import SongsPage from "./Pages/Songs";
+// import SearchSongs from "./Components/Searchbar/searchSongs";
+import SongsPage from "./Pages/SongsPage"
 import SearchArtists from "./Components/Searchbar/searchArtists";
 import Genres from "./Components/Genres/Genre";
 // import Artists from "./Pages/ArtistPage";
@@ -48,7 +48,7 @@ function App() {
               />
               <Route 
                 path="/Songs" 
-                element={<SearchSongs />}
+                element={<SongsPage />}
               />  
               <Route 
                 path="/Playlists" 
