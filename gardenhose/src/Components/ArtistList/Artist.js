@@ -1,5 +1,5 @@
 import React from "react";
-import Artist from "../Components/ArtistList/ArtistPage";
+import Artist from "./ArtistPage";
 
 function Artiste () {
    return (

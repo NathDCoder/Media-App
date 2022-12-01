@@ -1,5 +1,5 @@
 import React from "react";
-import Songs from "../Components/Songs/SongsPage";
+import Songs from "./SongsPage";
 
 function SongsPage () {
    return (
