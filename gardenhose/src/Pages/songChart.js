@@ -30,5 +30,5 @@ return (
     </div>
 )
     }  
-    //const response = await fetch("https://shazam-core.p.rapidapi.com/v1/charts/genre-world")
+  const response = await fetch("https://shazam-core.p.rapidapi.com/v1/charts/genre-world")
   export default Songs
