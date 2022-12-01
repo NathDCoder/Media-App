@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Genres} from "../Components/Genres/GenresPage";
+import {Genres} from "../../Pages/GenresPage";
 
 function Genre () {
    <Genres/>
@@ -9,7 +9,7 @@ function Genre () {
       <div className= "w-full flex relative justify-between items-center sm:flex-row flex-col mt-4 mb-10">
          <h2 className="genrepick font-bold text-3x1 text-white text-left absolute flex justify-center z-30">Pick a Genre</h2>
          <select onChange={() => {}}
-          value="" className ="genre absolute flex justify-center z-30 bg-black text-white p-3 text-sm rounded-lg">
+          value="" className ="genre absolute flex justify-center z-30 bg-transparent text-white p-3 text-sm rounded-lg">
          {Genres.map((Genres)=> <option key={Genres.value}value={Genres.value}>{Genres.title}</option>)}
          </select>
       </div>
