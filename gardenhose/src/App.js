@@ -11,7 +11,7 @@ import {Login} from "./Components/Login/Login";
 import SongsPage from "./Pages/SongsPage"
 import SearchArtists from "./Components/Searchbar/searchArtists";
 import Genres from "./Components/Genres/Genre";
-// import Artists from "./Pages/ArtistPage";
+import Artists from "./Pages/ArtistPage";
 import Playlist from "./Pages/Playlist";
 
 
@@ -44,7 +44,7 @@ function App() {
               />
               <Route 
                 path="/Artist" 
-                element={<SearchArtists />}
+                element={<Artists />}
               />
               <Route 
                 path="/Songs" 
