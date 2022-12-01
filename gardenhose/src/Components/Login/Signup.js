@@ -33,7 +33,7 @@ function Form() {
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
-    navigate('/')
+   
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !userName) {
@@ -45,12 +45,14 @@ function Form() {
     if (!checkPassword(password)) {
       setErrorMessage(
         `Choose a more secure password for the account: ${userName}`
-      )
-      return;
+      ) 
+
+    } if (validateEmail(password) || userName) {
+        
     }
-
-
-    alert(`Hello ${userName}`);
+    navigate("/");
+    alert(`Login Successful ${userName}`);
+    
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
