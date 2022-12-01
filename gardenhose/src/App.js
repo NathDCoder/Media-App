@@ -12,14 +12,6 @@ import SongsPage from "./Pages/Songs";
 import Genres from "./Pages/Genre";
 import Artist from "./Pages/Artist";
 import Playlist from "./Pages/Playlist";
-// import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-
-
-
-// const client = new ApolloClient({
-//   uri: 'graphql',
-//   cache: new InMemoryCache(),
-// });
 
 
 function App() {
@@ -55,7 +47,7 @@ function App() {
               />
               <Route 
                 path="/Songs" 
-                element={<Songs />}
+                element={<SongsPage />}
               />   
               <Route 
                 path="/Playlists" 
