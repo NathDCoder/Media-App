@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "amplify": "^0.0.11",
     "apollo-server-express": "^3.11.1",
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "build": "react-scripts build",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
