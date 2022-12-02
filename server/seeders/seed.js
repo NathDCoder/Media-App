@@ -1,19 +1,19 @@
 const db = require('../config/connection');
-const { User, Music } = require('../models');
+const { User, Comment } = require('../models');
 const userSeeds = require('./userSeeds.json');
-const musicSeeds = require('./musicSeeds.json');
+const commentSeeds = require('./CommentSeeds.json');
 
 db.once('open', async () => {
   try {
-    await Music.deleteMany({});
+    await Comment.deleteMany({});
     await User.deleteMany({});
 
     await User.create(userSeeds);
 
-    for (let i = 0; i < musicSeeds.length; i++) {
-      const { _id, musicAuthor } = await Music.create(musicSeeds[i]);
+    for (let i = 0; i < commentSeeds.length; i++) {
+      const { _id, CommentAuthor } = await Comment.create(commentSeeds[i]);
       const user = await User.findOneAndUpdate(
-        { username: musicAuthor },
+        { username: commentAuthor },
         {
           $addToSet: {
             songs: _id,
