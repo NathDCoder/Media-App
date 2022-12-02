@@ -6,13 +6,13 @@ import Home from "./Pages/HomePage";
 import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
-// import Searchbar from "./Components/Searchbar/Searchbar";
-// import SearchSongs from "./Components/Searchbar/searchSongs";
-import SongsPage from "./Pages/SongsPage"
+
+import Albumsearch from "./Pages/SongsPage";
 import SearchArtists from "./Components/Searchbar/searchArtists";
 import Genres from "./Components/Genres/Genre";
 // import Artists from "./Pages/ArtistPage";
 import Playlist from "./Pages/Playlist";
+
 
 
 
@@ -49,7 +49,7 @@ function App() {
               />
               <Route 
                 path="/Songs" 
-                element={<SongsPage />}
+                element={<Albumsearch />}
               />  
               <Route 
                 path="/Playlists" 
