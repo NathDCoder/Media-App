@@ -7,7 +7,7 @@ function background () {
     return(
 
         <div className="w-full h-screen relative">
-        <video className="w-full h-full object-cover" src={video} autoPlay loop muted />
+        <video className="background video w-full h-full object-fill" src={video} autoPlay loop muted />
         </div>
     )
 }

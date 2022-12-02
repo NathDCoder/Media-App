@@ -1,13 +1,12 @@
-
 import React, { useState } from 'react';
 import { GiMagnifyingGlass } from "react-icons/gi";
 
-import { Searching } from "../util/API";
+import { searchingArtists } from "../../util/artistsAPI"
 
 
-const SearchSongs = () => {
+const SearchArtists = () => {
     // create state for holding returned shazam api data
-    const [searchedSongs, setSearchedSongs] = useState([]);
+    const [searchedArtists, setSearchedArtists] = useState([]);
     // create state for holding our search field data
     const [searchInput, setSearchInput] = useState('');
   
@@ -29,7 +28,7 @@ const SearchSongs = () => {
       }
   
       try {
-        const response = await searchedSongs(searchInput);
+        const response = await searchingArtists(searchInput);
   
         if (!response.ok) {
           throw new Error('something went wrong!');
@@ -37,14 +36,12 @@ const SearchSongs = () => {
   
         const { items } = await response.json();
   
-        const songData = items.map((song) => ({
-          bookId: song.id,
-          title: song.title || ['No author to display'],
-          artists: song.subtitle,
-          image: song.images.coverart || '',
+        const artistData = items.map((artist) => ({
+          artistId: artist.id,
+           title: artist.name,
         }));
   
-        setSearchedSongs(songData);
+        setSearchedArtists(artistData);
         setSearchInput('');
       } catch (err) {
         console.error(err);
@@ -54,15 +51,23 @@ const SearchSongs = () => {
 
     return (
         <>
-        <form className='Search' onSubmit={handleFormSubmit} >
-        <input placeholder =" Search for Song" type = 'text' id = "search"/>
-            <button className = "searchbutton" type="submit ">
+        <form className='ml-10 absolute form2' >
+        <input   placeholder ="Search for an Artist" type = 'text' id = "search"/>
+            <button type="submit" onSubmit={handleFormSubmit}>
             <GiMagnifyingGlass/>
             </button>
         </form>
 
+        {searchedArtists.map((artist)=> {
+          return (
+        <div className='w-full flex justify-center items-center flex-col'>
+          <h1 className='font-bold text-2x1 text-white mt-2'>{artist.name} || </h1>
+        </div>
+            ) 
+          })}
+          
         </>
     );
 };
 
-export default SearchSongs;
+export default SearchArtists;

@@ -2,16 +2,18 @@ import React from "react";
 import NavLinks from "./Components/NavBar/NavBar";
 import Title from "./Components/NavBar/Title";
 import Background from "./Pages/Background";
-import Home from "./Pages/Home"
+import Home from "./Pages/HomePage";
 import { Route, Routes } from 'react-router-dom';
 import Signup from "./Components/Login/Signup";
 import {Login} from "./Components/Login/Login";
-// import Searchbar from "./Components/Searchbar/Searchbar";
-import Songs from "./Pages/songChart"
-import SongsPage from "./Pages/Songs";
-import Genres from "./Pages/Genre";
-import Artist from "./Pages/Artist";
+
+import Albumsearch from "./Pages/SongsPage";
+import SearchArtists from "./Components/Searchbar/searchArtists";
+import Genres from "./Components/Genres/Genre";
+// import Artists from "./Pages/ArtistPage";
 import Playlist from "./Pages/Playlist";
+
+
 
 
 function App() {
@@ -44,12 +46,12 @@ function App() {
               />
               <Route 
                 path="/Artist" 
-                element={<Artist />}
+                element={<SearchArtists />}
               />
               <Route 
                 path="/Songs" 
-                element={<SongsPage />}
-              />   
+                element={<Albumsearch />}
+              />  
               <Route 
                 path="/Playlists" 
                 element={<Playlist />}

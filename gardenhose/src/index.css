@@ -33,6 +33,9 @@
     .form {
         @apply flex justify-center bottom-60
     }
+    .form2 {
+        @apply flex justify-center top-60
+    }
     
     .siginbutton {
         @apply m-2 w-32 h-10
@@ -61,8 +64,11 @@
     .logreturn {
         @apply w-28 h-10
     }
-    .search {
-        
+    .box-content {
+        @apply flex shrink    
+    }
+    .loginsignup {
+        @apply relative border bottom-44
     }
 }
 
@@ -105,11 +111,39 @@ video {
     right: 550px;   
 }
 .genre {
-    bottom: 700px;
-    left: 300px;
+    font-size:large ;
+    bottom: 600px;
+    left: -20px;
+}
+
+.form2 {
+    left: 850px;
 }
 
 .genrepick {
-    bottom: 775px;
-    left: 900px;
+    bottom: 700px;
+    
+}
+
+.songinput {
+    position: absolute;
+    bottom: 350px;
+}
+.row {
+
+    position:relative;
+    bottom: 100px;
+}
+
+.box-content{
+    width: min-content;  
+}
+
+.loginsignup {
+    bottom: 30px;
+    left: 100px;
+}
+
+.hamburger {
+    left: 580px;
 }
