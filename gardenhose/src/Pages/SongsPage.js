@@ -59,11 +59,11 @@ function Albumsearch() {
          </Button>
       </InputGroup>
      </Container>
-     <Container className="flex relative shrink">
-      <Row className='box-content'>
+     <Container className="flex flex col ">
+      <Row className='mx-1 row row-cols-2 w-full h-full'>
         {albumList.map( (album, i)=> {
           return (
-            <Card>
+            <Card className="">
               <Card.Img src={album.images[0].url}/>
               <Card.Body>
                 <Card.Title>{album.name}</Card.Title>

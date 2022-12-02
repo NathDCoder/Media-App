@@ -147,3 +147,7 @@ video {
 .hamburger {
     left: 580px;
 }
+.cardBody {
+    position: absolute;
+    flex-wrap: wrap;
+}
