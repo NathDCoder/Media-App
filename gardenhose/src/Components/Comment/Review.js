@@ -34,7 +34,7 @@ const Review = ({
                 {!isEditing && <div className="review-text">{review.body}</div>}
                 {isEditing && (
                     <ReviewForm 
-                    submitLabel="Update" 
+                    submitbutton="Update" 
                     hasCancelButton initialText={review.body} 
                     handleSubmit={(text) => updateReview(text, review.id)} 
                     handleCancel={() => setActiveReview}
@@ -47,7 +47,7 @@ const Review = ({
                 </div>
                 {isReplying && (
                     <ReviewForm 
-                      submitLabel="Reply" 
+                      submitbutton="Reply" 
                       handleSubmit={(text) => addReview(text, replyId)}
                     />
                 )}

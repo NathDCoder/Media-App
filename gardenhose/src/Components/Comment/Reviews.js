@@ -56,7 +56,7 @@ const Reviews = ({ currentUserId }) => {
         <div className="reviews">
             <h3 className="reviews-title">Reviews</h3>
             <div className="review-form-title">Write review</div>
-            <ReviewForm submitLabel="Write" handleSubmit="addReview"/>
+            <ReviewForm submitbutton="Write" handleSubmit="addReview"/>
             <div className="reviews-container">
                 {rootReviews.map(rootReview => (
                     <Review 
