@@ -50,7 +50,7 @@ function Albumsearch() {
   return (
     <div className="App">
      <Container>
-      <InputGroup className = "mb-4" size="md" >
+      <InputGroup className = "songinput" size="md" >
         <FormControl
         placeholder = 'Search' type= 'input' 
          onChange={event => setSongInput(event.target.value)} />
@@ -59,8 +59,8 @@ function Albumsearch() {
          </Button>
       </InputGroup>
      </Container>
-     <Container>
-      <Row className='mx-4 row row-cols-4'>
+     <Container className="flex relative shrink">
+      <Row className='box-content'>
         {albumList.map( (album, i)=> {
           return (
             <Card>

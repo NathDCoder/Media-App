@@ -22,6 +22,7 @@ function App() {
     <nav>
       <NavLinks />
       <Title />
+      {/* <Searchbar /> */}
      <Background />
     </nav>
   

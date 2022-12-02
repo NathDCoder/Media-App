@@ -51,9 +51,9 @@ const SearchArtists = () => {
 
     return (
         <>
-        <form className='ml-10' >
-        <input   placeholder =" Search for an Artist" type = 'text' id = "search"/>
-            <button type="submit " onSubmit={handleFormSubmit}>
+        <form className='ml-10 absolute form2' >
+        <input   placeholder ="Search for an Artist" type = 'text' id = "search"/>
+            <button type="submit" onSubmit={handleFormSubmit}>
             <GiMagnifyingGlass/>
             </button>
         </form>
@@ -65,7 +65,7 @@ const SearchArtists = () => {
         </div>
             ) 
           })}
-
+          
         </>
     );
 };

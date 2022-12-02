@@ -8,7 +8,7 @@
 @layer base {
 
     body {
-        @apply font-[Montserrat] h-screen bg-gradient-to-b from-slate-600 to-slate-400
+        @apply font-[Montserrat] h-screen bg-gradient-to-b from-slate-600 to-slate-400 bg-inherit
     }
     li {
         @apply p-6 text-lg font-bold list-none 
@@ -32,6 +32,9 @@
 
     .form {
         @apply flex justify-center bottom-60
+    }
+    .form2 {
+        @apply flex justify-center top-60
     }
     
     .siginbutton {
@@ -61,7 +64,12 @@
     .logreturn {
         @apply w-28 h-10
     }
-    
+    .box-content {
+        @apply flex shrink    
+    }
+    .loginsignup {
+        @apply relative border bottom-44
+    }
 }
 
 .main {
@@ -103,11 +111,39 @@ video {
     right: 550px;   
 }
 .genre {
-    bottom: 700px;
-    left: 900px;
+    font-size:large ;
+    bottom: 600px;
+    left: -20px;
+}
+
+.form2 {
+    left: 850px;
 }
 
 .genrepick {
-    bottom: 775px;
-    left: 900px;
+    bottom: 700px;
+    
+}
+
+.songinput {
+    position: absolute;
+    bottom: 350px;
+}
+.row {
+
+    position:relative;
+    bottom: 100px;
+}
+
+.box-content{
+    width: min-content;  
+}
+
+.loginsignup {
+    bottom: 30px;
+    left: 100px;
+}
+
+.hamburger {
+    left: 580px;
 }
